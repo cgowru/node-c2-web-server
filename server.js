@@ -43,6 +43,12 @@ app.get('/about',(req,res)=>{
     });
 });
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageTitle : 'Porjects Page'
+    });
+});
+
 app.listen(port,()=>{
     console.log(`Server listening on ${port}`);
 });
